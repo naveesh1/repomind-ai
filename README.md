@@ -230,6 +230,17 @@ https://github.com/fastapi/fastapi
 
 Enter the repository URL in RepoMind AI and run the analysis to explore repository metrics, dependency relationships, change impact, regression risk, architecture intelligence, and test selection.
 
+### 3. Run the Backend
+
+Open a terminal in the project root:
+
+$env:PYTHONPATH="backend"
+uvicorn app.main:app --reload
+
+### 4. Run the Frontend
+
+npm --prefix frontend run dev
+
 ---
 
 ## 🎯 Why RepoMind AI?
