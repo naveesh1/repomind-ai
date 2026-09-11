@@ -214,11 +214,21 @@ RepoMind-AI/
 git clone https://github.com/naveesh1/repomind-ai.git
 cd repomind-ai
 
-### 2. Run the Frontend
+### 2. Run the Backend in First powershell
+
+$env:PYTHONPATH="backend"
+
+uvicorn app.main:app --reload
+
+INFO:Uvicorn running on http://127.0.0.1:8000     
+
+(ADD / AT LAST (http://127.0.0.1:8000/ ) TO RUN BACKEND)
+
+### 3. Run the Frontend in Second powershell
 
 npm --prefix frontend run dev
 
-### 3. Try with a Public Repository
+### 4. Try with a Public Repository
 
 RepoMind AI can analyze publicly accessible GitHub repositories.
 
