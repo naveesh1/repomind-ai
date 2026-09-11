@@ -12,6 +12,12 @@ It combines repository analysis, dependency intelligence, change-impact analysis
 
 ---
 
+## 📊 Platform Overview
+
+![RepoMind AI Dashboard](screenshots/repomind-dashboard.png)
+
+---
+
 ## 🚀 Why RepoMind AI?
 
 Modern software repositories can contain thousands of files, functions, classes, dependencies, and tests. A small code change can potentially affect many other components.
