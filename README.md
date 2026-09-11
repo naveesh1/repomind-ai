@@ -235,7 +235,7 @@ RepoMind AI can analyze publicly accessible GitHub repositories.
 For a quick demonstration, try one of these repositories:
 
 - https://github.com/fastapi/fastapi
-- https://github.com/pallets/flask
+- https://github.com/pallets/flask (DEFAULT FILE AS IT SHOWS IN FRONTEND)
 - https://github.com/psf/requests
 
 Example repository URL:
