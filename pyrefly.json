@@ -1,0 +1,15 @@
+{
+  "project_root": "backend",
+  "search_paths": [
+    "backend"
+  ],
+  "search_path": [
+    "backend"
+  ],
+  "extra_paths": [
+    "backend"
+  ],
+  "pythonpath": [
+    "backend"
+  ]
+}

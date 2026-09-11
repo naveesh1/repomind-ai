@@ -1,0 +1,11 @@
+[tool.pyrefly]
+python-interpreter = "E:/RepoMind-AI/backend/.venv/Scripts/python.exe"
+search-paths = ["."]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+extraPaths = ["."]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
