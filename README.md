@@ -214,6 +214,22 @@ RepoMind-AI/
 git clone https://github.com/naveesh1/repomind-ai.git
 cd repomind-ai
 
+### 2. Try with a Public Repository
+
+RepoMind AI can analyze publicly accessible GitHub repositories.
+
+For a quick demonstration, try one of these repositories:
+
+- https://github.com/fastapi/fastapi
+- https://github.com/pallets/flask
+- https://github.com/psf/requests
+
+Example repository URL:
+
+https://github.com/fastapi/fastapi
+
+Enter the repository URL in RepoMind AI and run the analysis to explore repository metrics, dependency relationships, change impact, regression risk, architecture intelligence, and test selection.
+
 ---
 
 ## 🎯 Why RepoMind AI?
