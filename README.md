@@ -214,7 +214,18 @@ RepoMind-AI/
 git clone https://github.com/naveesh1/repomind-ai.git
 cd repomind-ai
 
-### 2. Try with a Public Repository
+### 2. Run the Backend
+
+Open a terminal in the project root:
+
+$env:PYTHONPATH="backend"
+uvicorn app.main:app --reload
+
+### 3. Run the Frontend
+
+npm --prefix frontend run dev
+
+### 4. Try with a Public Repository
 
 RepoMind AI can analyze publicly accessible GitHub repositories.
 
@@ -229,17 +240,6 @@ Example repository URL:
 https://github.com/fastapi/fastapi
 
 Enter the repository URL in RepoMind AI and run the analysis to explore repository metrics, dependency relationships, change impact, regression risk, architecture intelligence, and test selection.
-
-### 3. Run the Backend
-
-Open a terminal in the project root:
-
-$env:PYTHONPATH="backend"
-uvicorn app.main:app --reload
-
-### 4. Run the Frontend
-
-npm --prefix frontend run dev
 
 ---
 
