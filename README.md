@@ -2,59 +2,83 @@
 
 > **AI-Powered Software Change Impact & Regression Risk Analyzer**
 
-RepoMind AI is designed to analyze software repositories and determine code dependencies, change impact radii, and regression risk factors when modifying code.
+RepoMind AI is a software engineering intelligence platform that analyzes software repositories to understand their structure, dependencies, architecture, code changes, testing relationships, and potential regression risks.
+
+Instead of only asking whether a code change is correct, RepoMind AI helps answer:
+
+> **"If this code changes, what else could be affected?"**
+
+It combines repository analysis, dependency intelligence, change-impact analysis, regression-risk assessment, architecture analysis, smart test selection, and release-gate evaluation into a unified engineering dashboard.
 
 ---
 
-## 🏗️ Project Structure
+## 🚀 Why RepoMind AI?
+
+Modern software repositories can contain thousands of files, functions, classes, dependencies, and tests. A small code change can potentially affect many other components.
+
+Traditional code review and static-analysis tools commonly focus on:
+
+- Code correctness
+- Code quality
+- Style and linting
+- Known bugs
+- Security issues
+- Pull-request review
+
+RepoMind AI focuses on **software change intelligence**.
+
+It helps engineering teams understand:
+
+- What components may be affected by a change
+- How far a change can propagate through dependencies
+- Which tests are relevant to the change
+- How much regression risk exists
+- Whether architectural problems are present
+- Whether a change is suitable for release
+
+---
+
+# 🎯 Core Capabilities
+
+## 🔍 Repository Intelligence
+
+Analyze a repository and extract engineering-level information including:
+
+- Total files
+- Source files
+- Test files
+- Directories
+- Python modules
+- Functions
+- Classes
+- Imports
+- Dependency connections
+
+These metrics provide a structural overview of the repository before deeper analysis is performed.
+
+---
+
+## 💥 Change Impact Analysis
+
+Determine which components may be affected when a particular file or module changes.
+
+RepoMind analyzes dependency relationships and estimates:
+
+- Directly impacted components
+- Transitively impacted components
+- Impact radius
+- Dependency propagation
+- Change criticality
+
+Example:
 
 ```text
-RepoMind-AI/
-├── frontend/             # React + TypeScript Web Application (Vite)
-├── backend/              # Python FastAPI Application
-├── tests/                # Automated Test Suites (Frontend & Backend)
-├── docs/                 # Project Documentation & Specifications
-├── .gitignore            # Git Ignore Rules
-└── README.md             # Project Overview & Setup Instructions
-```
-
----
-
-## 📁 Component Overview
-
-### 1. `frontend/`
-- **Technology Stack:** React, TypeScript, Vite
-- **Purpose:** User Interface for repository analysis visualization, impact reporting, and interactive dependency graphs.
-- **Getting Started:**
-  ```bash
-  cd frontend
-  npm install
-  npm run dev
-  ```
-
-### 2. `backend/`
-- **Technology Stack:** Python, FastAPI, Uvicorn
-- **Purpose:** Core engine for static code analysis, graph generation, impact assessment, and API endpoints.
-- **Getting Started:**
-  ```bash
-  cd backend
-  python -m venv .venv
-  # On Windows:
-  .venv\Scripts\activate
-  # On macOS/Linux:
-  source .venv/bin/activate
-  pip install -r requirements.txt
-  uvicorn app.main:app --reload
-  ```
-
-### 3. `tests/`
-- **Purpose:** Contains test suits for backend (pytest) and frontend (unit/integration testing).
-
-### 4. `docs/`
-- **Purpose:** Technical documentation, architectural design records (ADRs), API specifications, and research notes.
-
----
-
-## 📜 License
-
-Private Repository - All Rights Reserved.
+Changed File
+     │
+     ├── Direct Dependencies
+     │
+     ├── Dependent Modules
+     │
+     └── Transitive Impact
+              │
+              └── Potentially Affected Components
