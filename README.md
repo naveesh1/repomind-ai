@@ -214,18 +214,11 @@ RepoMind-AI/
 git clone https://github.com/naveesh1/repomind-ai.git
 cd repomind-ai
 
-### 2. Run the Backend
-
-Open a terminal in the project root:
-
-$env:PYTHONPATH="backend"
-uvicorn app.main:app --reload
-
-### 3. Run the Frontend
+### 2. Run the Frontend
 
 npm --prefix frontend run dev
 
-### 4. Try with a Public Repository
+### 3. Try with a Public Repository
 
 RepoMind AI can analyze publicly accessible GitHub repositories.
 
